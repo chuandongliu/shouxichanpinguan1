@@ -1,0 +1,12 @@
+{
+"plugins":[
+"expandable-chapters" , 
+"chapter-fold",
+"splitter",
+"anchor-navigation-ex",
+"-sharing",
+"-lunr",
+"-search",
+"search-pro"
+]
+}
