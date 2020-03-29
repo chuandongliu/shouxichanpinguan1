@@ -1,0 +1,1470 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第5节　版本规划的表达以及实现过程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../第8章　版本规划（中）——App端规划/" />
+    
+    
+    <link rel="prev" href="第4节　功能模块规划的流程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../前言.html">
+            
+                <a href="../../前言.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../产品认知篇　理解互联网产品和产品管理/">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/">
+            
+                    
+                    产品认知篇-理解互联网产品和产品管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/">
+            
+                    
+                    第1章-互联网商业、公司、产品
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第1节-中国互联网商业、公司的顶层格局.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第1节-中国互联网商业、公司的顶层格局.html">
+            
+                    
+                    第1节-中国互联网商业、公司的顶层格局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第2节-互联网公司的业务经营.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第2节-互联网公司的业务经营.html">
+            
+                    
+                    第2节-互联网公司的业务经营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第3节-互联网产品的定义和类型.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第3节-互联网产品的定义和类型.html">
+            
+                    
+                    第3节-互联网产品的定义和类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第4节-互联网产品最重要的规律——S曲线规律.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第1章-互联网商业、公司、产品/第4节-互联网产品最重要的规律——S曲线规律.html">
+            
+                    
+                    第4节-互联网产品最重要的规律——S曲线规律
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/">
+            
+                    
+                    第2章　产品经理、产品人
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/第1节　产品经理的定义和产品人的层级.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/第1节　产品经理的定义和产品人的层级.html">
+            
+                    
+                    第1节　产品经理的定义和产品人的层级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/第2节　产品人的概况.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/第2节　产品人的概况.html">
+            
+                    
+                    第2节　产品人的概况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/第3节　产品人在公司架构和工作流中的位置.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第2章　产品经理、产品人/第3节　产品人在公司架构和工作流中的位置.html">
+            
+                    
+                    第3节　产品人在公司架构和工作流中的位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../产品认知篇　理解互联网产品和产品管理/第3章　产品新人与产品团队/">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第3章　产品新人与产品团队/">
+            
+                    
+                    第3章　产品新人与产品团队
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../产品认知篇　理解互联网产品和产品管理/第3章　产品新人与产品团队/第1节　产品新人和产品团队概述.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第3章　产品新人与产品团队/第1节　产品新人和产品团队概述.html">
+            
+                    
+                    第1节　产品新人和产品团队概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../产品认知篇　理解互联网产品和产品管理/第3章　产品新人与产品团队/第2节　新人在产品团队中立足和成长的要点.html">
+            
+                <a href="../../产品认知篇　理解互联网产品和产品管理/第3章　产品新人与产品团队/第2节　新人在产品团队中立足和成长的要点.html">
+            
+                    
+                    第2节　新人在产品团队中立足和成长的要点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    能力体系篇　产品新人的能力杠铃
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../第4章　产品新人能力体系的杠铃模型/">
+            
+                <a href="../第4章　产品新人能力体系的杠铃模型/">
+            
+                    
+                    第4章　产品新人能力体系的杠铃模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../第4章　产品新人能力体系的杠铃模型/第1节　产品人能力体系.html">
+            
+                <a href="../第4章　产品新人能力体系的杠铃模型/第1节　产品人能力体系.html">
+            
+                    
+                    第1节　产品人能力体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../第4章　产品新人能力体系的杠铃模型/第2节　车马的产品能力体系——杠铃.html">
+            
+                <a href="../第4章　产品新人能力体系的杠铃模型/第2节　车马的产品能力体系——杠铃.html">
+            
+                    
+                    第2节　车马的产品能力体系——杠铃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../第4章　产品新人能力体系的杠铃模型/第2节　车马的产品能力体系——杠铃模型.html">
+            
+                <a href="../第4章　产品新人能力体系的杠铃模型/第2节　车马的产品能力体系——杠铃模型.html">
+            
+                    
+                    第2节　车马的产品能力体系——杠铃模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../第5章　用户调查/">
+            
+                <a href="../第5章　用户调查/">
+            
+                    
+                    第5章　用户调查
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../第5章　用户调查/第1节　用户调查的相关概念及其关系.html">
+            
+                <a href="../第5章　用户调查/第1节　用户调查的相关概念及其关系.html">
+            
+                    
+                    第1节　用户调查的相关概念及其关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../第5章　用户调查/第2节　用户调查的能力要求和步骤.html">
+            
+                <a href="../第5章　用户调查/第2节　用户调查的能力要求和步骤.html">
+            
+                    
+                    第2节　用户调查的能力要求和步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../第5章　用户调查/第3节　调查问卷的设计.html">
+            
+                <a href="../第5章　用户调查/第3节　调查问卷的设计.html">
+            
+                    
+                    第3节　调查问卷的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../第6章　需求管理/">
+            
+                <a href="../第6章　需求管理/">
+            
+                    
+                    第6章　需求管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../第6章　需求管理/第1节　需求管理的内容和过程.html">
+            
+                <a href="../第6章　需求管理/第1节　需求管理的内容和过程.html">
+            
+                    
+                    第1节　需求管理的内容和过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../第6章　需求管理/第2节　从步骤的角度理解需求管理.html">
+            
+                <a href="../第6章　需求管理/第2节　从步骤的角度理解需求管理.html">
+            
+                    
+                    第2节　从步骤的角度理解需求管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../第6章　需求管理/第3节　从需求点的角度理解需求管理.html">
+            
+                <a href="../第6章　需求管理/第3节　从需求点的角度理解需求管理.html">
+            
+                    
+                    第3节　从需求点的角度理解需求管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第7章　版本规划（上）——概述和功能模块规划
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="第1节　产品规划、版本规划、功能模块规划.html">
+            
+                <a href="第1节　产品规划、版本规划、功能模块规划.html">
+            
+                    
+                    第1节　产品规划、版本规划、功能模块规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="第2节　深入理解产品的功能模块（以注册登录为例）.html">
+            
+                <a href="第2节　深入理解产品的功能模块（以注册登录为例）.html">
+            
+                    
+                    第2节　深入理解产品的功能模块（以注册登录为例）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="第3节　功能模块规划的重要工具.html">
+            
+                <a href="第3节　功能模块规划的重要工具.html">
+            
+                    
+                    第3节　功能模块规划的重要工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="第4节　功能模块规划的流程.html">
+            
+                <a href="第4节　功能模块规划的流程.html">
+            
+                    
+                    第4节　功能模块规划的流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4.5" data-path="第5节　版本规划的表达以及实现过程.html">
+            
+                <a href="第5节　版本规划的表达以及实现过程.html">
+            
+                    
+                    第5节　版本规划的表达以及实现过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../第8章　版本规划（中）——App端规划/">
+            
+                <a href="../第8章　版本规划（中）——App端规划/">
+            
+                    
+                    第8章　版本规划（中）——App端规划
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="../第8章　版本规划（中）——App端规划/第1节　App端规划的基础知识.html">
+            
+                <a href="../第8章　版本规划（中）——App端规划/第1节　App端规划的基础知识.html">
+            
+                    
+                    第1节　App端规划的基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.2" data-path="../第8章　版本规划（中）——App端规划/第2节　App端规划的实战要点.html">
+            
+                <a href="../第8章　版本规划（中）——App端规划/第2节　App端规划的实战要点.html">
+            
+                    
+                    第2节　App端规划的实战要点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="../第8章　版本规划（中）——App端规划/第3节　理解iOS和Android规范.html">
+            
+                <a href="../第8章　版本规划（中）——App端规划/第3节　理解iOS和Android规范.html">
+            
+                    
+                    第3节　理解iOS和Android规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.4" data-path="../第8章　版本规划（中）——App端规划/第4节　为Android、iOS双平台做规划.html">
+            
+                <a href="../第8章　版本规划（中）——App端规划/第4节　为Android、iOS双平台做规划.html">
+            
+                    
+                    第4节　为Android、iOS双平台做规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../第9章　版本规划（下）——Web端规划/">
+            
+                <a href="../第9章　版本规划（下）——Web端规划/">
+            
+                    
+                    第9章　版本规划（下）——Web端规划
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.6.1" data-path="../第9章　版本规划（下）——Web端规划/第1节　Web端规划概述.html">
+            
+                <a href="../第9章　版本规划（下）——Web端规划/第1节　Web端规划概述.html">
+            
+                    
+                    第1节　Web端规划概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6.2" data-path="../第9章　版本规划（下）——Web端规划/第2节　PC　Web端规划的要点.html">
+            
+                <a href="../第9章　版本规划（下）——Web端规划/第2节　PC　Web端规划的要点.html">
+            
+                    
+                    第2节　PC　Web端规划的要点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6.3" data-path="../第9章　版本规划（下）——Web端规划/第3节　手机Web端规划的特点和要点.html">
+            
+                <a href="../第9章　版本规划（下）——Web端规划/第3节　手机Web端规划的特点和要点.html">
+            
+                    
+                    第3节　手机Web端规划的特点和要点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../第10章　数据分析/">
+            
+                <a href="../第10章　数据分析/">
+            
+                    
+                    第10章　数据分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.7.1" data-path="../第10章　数据分析/第1节　数据分析对产品人的价值.html">
+            
+                <a href="../第10章　数据分析/第1节　数据分析对产品人的价值.html">
+            
+                    
+                    第1节　数据分析对产品人的价值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7.2" data-path="../第10章　数据分析/第2节　产品实战中的数据分析工作.html">
+            
+                <a href="../第10章　数据分析/第2节　产品实战中的数据分析工作.html">
+            
+                    
+                    第2节　产品实战中的数据分析工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../第11章　产品功能借鉴/">
+            
+                <a href="../第11章　产品功能借鉴/">
+            
+                    
+                    第11章　产品功能借鉴
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.8.1" data-path="../第11章　产品功能借鉴/第1节　对产品功能借鉴的理解.html">
+            
+                <a href="../第11章　产品功能借鉴/第1节　对产品功能借鉴的理解.html">
+            
+                    
+                    第1节　对产品功能借鉴的理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8.2" data-path="../第11章　产品功能借鉴/第2节　产品功能借鉴的实战.html">
+            
+                <a href="../第11章　产品功能借鉴/第2节　产品功能借鉴的实战.html">
+            
+                    
+                    第2节　产品功能借鉴的实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../第12章　工具/">
+            
+                <a href="../第12章　工具/">
+            
+                    
+                    第12章　工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.9.1" data-path="../第12章　工具/第1节　认识工具特征，在工作环节合理使用.html">
+            
+                <a href="../第12章　工具/第1节　认识工具特征，在工作环节合理使用.html">
+            
+                    
+                    第1节　认识工具特征，在工作环节合理使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.2" data-path="../第12章　工具/第2节　Axure　RP快速上手.html">
+            
+                <a href="../第12章　工具/第2节　Axure　RP快速上手.html">
+            
+                    
+                    第2节　Axure　RP快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.3" data-path="../第12章　工具/第3节　Mockplus快速上手指南.html">
+            
+                <a href="../第12章　工具/第3节　Mockplus快速上手指南.html">
+            
+                    
+                    第3节　Mockplus快速上手指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../第13章　逻辑/">
+            
+                <a href="../第13章　逻辑/">
+            
+                    
+                    第13章　逻辑
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.10.1" data-path="../第13章　逻辑/第1节　对逻辑最基本的了解.html">
+            
+                <a href="../第13章　逻辑/第1节　对逻辑最基本的了解.html">
+            
+                    
+                    第1节　对逻辑最基本的了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10.2" data-path="../第13章　逻辑/第2节　逻辑能力的提高和应用.html">
+            
+                <a href="../第13章　逻辑/第2节　逻辑能力的提高和应用.html">
+            
+                    
+                    第2节　逻辑能力的提高和应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../第14章　沟通/">
+            
+                <a href="../第14章　沟通/">
+            
+                    
+                    第14章　沟通
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.11.1" data-path="../第14章　沟通/第1节　理解沟通的过程，提升沟通能力.html">
+            
+                <a href="../第14章　沟通/第1节　理解沟通的过程，提升沟通能力.html">
+            
+                    
+                    第1节　理解沟通的过程，提升沟通能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11.2" data-path="../第14章　沟通/第2节　产品新人如何与设计、技术人员高效沟通.html">
+            
+                <a href="../第14章　沟通/第2节　产品新人如何与设计、技术人员高效沟通.html">
+            
+                    
+                    第2节　产品新人如何与设计、技术人员高效沟通
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../第15章　杠铃模型的补充—技术知识/">
+            
+                <a href="../第15章　杠铃模型的补充—技术知识/">
+            
+                    
+                    第15章　杠铃模型的补充—技术知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.12.1" data-path="../第15章　杠铃模型的补充—技术知识/第1节　产品新人要懂点技术.html">
+            
+                <a href="../第15章　杠铃模型的补充—技术知识/第1节　产品新人要懂点技术.html">
+            
+                    
+                    第1节　产品新人要懂点技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12.2" data-path="../第15章　杠铃模型的补充—技术知识/第2节　最基础的技术知识及其应用.html">
+            
+                <a href="../第15章　杠铃模型的补充—技术知识/第2节　最基础的技术知识及其应用.html">
+            
+                    
+                    第2节　最基础的技术知识及其应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../第16章　产品新人的综合实战案例/">
+            
+                <a href="../第16章　产品新人的综合实战案例/">
+            
+                    
+                    第16章　产品新人的综合实战案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.13.1" data-path="../第16章　产品新人的综合实战案例/第1节　公司的商业考虑.html">
+            
+                <a href="../第16章　产品新人的综合实战案例/第1节　公司的商业考虑.html">
+            
+                    
+                    第1节　公司的商业考虑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13.2" data-path="../第16章　产品新人的综合实战案例/第2节　产品经理对产品的整体考虑.html">
+            
+                <a href="../第16章　产品新人的综合实战案例/第2节　产品经理对产品的整体考虑.html">
+            
+                    
+                    第2节　产品经理对产品的整体考虑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13.3" data-path="../第16章　产品新人的综合实战案例/第3节　忙碌的一周.html">
+            
+                <a href="../第16章　产品新人的综合实战案例/第3节　忙碌的一周.html">
+            
+                    
+                    第3节　忙碌的一周
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13.4" data-path="../第16章　产品新人的综合实战案例/第4节　产品经理的指点.html">
+            
+                <a href="../第16章　产品新人的综合实战案例/第4节　产品经理的指点.html">
+            
+                    
+                    第4节　产品经理的指点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13.5" data-path="../第16章　产品新人的综合实战案例/第5节　合格交付.html">
+            
+                <a href="../第16章　产品新人的综合实战案例/第5节　合格交付.html">
+            
+                    
+                    第5节　合格交付
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../成长方法篇　入行、入门、持续成长/">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/">
+            
+                    
+                    成长方法篇　入行、入门、持续成长
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../成长方法篇　入行、入门、持续成长/第17章　应届生如何获得产品职位？/">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第17章　应届生如何获得产品职位？/">
+            
+                    
+                    第17章　应届生如何获得产品职位？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../成长方法篇　入行、入门、持续成长/第17章　应届生如何获得产品职位？/第1节　应届生的顶层思路和重要准备.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第17章　应届生如何获得产品职位？/第1节　应届生的顶层思路和重要准备.html">
+            
+                    
+                    第1节　应届生的顶层思路和重要准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../成长方法篇　入行、入门、持续成长/第17章　应届生如何获得产品职位？/第2节　找准目标职位，针对性出击.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第17章　应届生如何获得产品职位？/第2节　找准目标职位，针对性出击.html">
+            
+                    
+                    第2节　找准目标职位，针对性出击
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../成长方法篇　入行、入门、持续成长/第18章　其他岗位人士如何转行做产品？/">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第18章　其他岗位人士如何转行做产品？/">
+            
+                    
+                    第18章　其他岗位人士如何转行做产品？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../成长方法篇　入行、入门、持续成长/第18章　其他岗位人士如何转行做产品？/第1节　转行者必须清醒地认识市场环境.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第18章　其他岗位人士如何转行做产品？/第1节　转行者必须清醒地认识市场环境.html">
+            
+                    
+                    第1节　转行者必须清醒地认识市场环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../成长方法篇　入行、入门、持续成长/第18章　其他岗位人士如何转行做产品？/第2节　转行路径.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第18章　其他岗位人士如何转行做产品？/第2节　转行路径.html">
+            
+                    
+                    第2节　转行路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/">
+            
+                    
+                    第19章　在职产品新人的持续成长
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第1节　烧脑——好书为主，网络、现场活动为辅.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第1节　烧脑——好书为主，网络、现场活动为辅.html">
+            
+                    
+                    第1节　烧脑——好书为主，网络、现场活动为辅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第2节　产品新人应对新事物的正确方式.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第2节　产品新人应对新事物的正确方式.html">
+            
+                    
+                    第2节　产品新人应对新事物的正确方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第3节　产品新人职场行为的两个要点.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第3节　产品新人职场行为的两个要点.html">
+            
+                    
+                    第3节　产品新人职场行为的两个要点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第4节　对产品经理的初步了解.html">
+            
+                <a href="../../成长方法篇　入行、入门、持续成长/第19章　在职产品新人的持续成长/第4节　对产品经理的初步了解.html">
+            
+                    
+                    第4节　对产品经理的初步了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第5节　版本规划的表达以及实现过程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;"><b>1. </b>&#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EA7;&#x54C1;&#x8868;&#x8FBE;&#x7684;&#x6587;&#x6863;"><b>1.1. </b>&#x4EA7;&#x54C1;&#x8868;&#x8FBE;&#x7684;&#x6587;&#x6863;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EA7;&#x54C1;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x6587;&#x6863;"><b>1.1.1. </b>&#x4EA7;&#x54C1;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x6587;&#x6863;</a></li><li><span class="title-icon "></span><a href="#prd&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;"><b>1.1.2. </b>PRD&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;</a></li></ul><li><span class="title-icon "></span><a href="#&#x539F;&#x578B;"><b>1.2. </b>&#x539F;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x7248;&#x672C;&#x4ECE;&#x89C4;&#x5212;&#x5230;&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;"><b>1.3. </b>&#x7248;&#x672C;&#x4ECE;&#x89C4;&#x5212;&#x5230;&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;</a></li></ul></ul></div><a href="#&#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;"><a name="&#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7B2C;5&#x8282;&#x3000;&#x7248;&#x672C;&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</h1>
+<ul>
+<li>&#x65E2;&#x7136;&#x8981;&#x8BBE;&#x8BA1;&#x3001;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x6765;&#x5B9E;&#x65BD;&#xFF0C;&#x90A3;&#x4E48;&#x4EC5;&#x4EA7;&#x54C1;&#x4EBA;&#x81EA;&#x5DF1;&#x60F3;&#x6E05;&#x695A;&#x8FD8;&#x4E0D;&#x591F;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x8BA9;&#x8BBE;&#x8BA1;&#x3001;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x4E5F;&#x80FD;&#x6E05;&#x695A;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x8BBE;&#x8BA1;&#x5982;&#x4F55;&#x8868;&#x8FBE;&#x9700;&#x6C42;&#x7684;&#x95EE;&#x9898;&#x4E86;</li>
+<li>&#x89C4;&#x5212;&#x7684;&#x8868;&#x8FBE;&#x4E3B;&#x4F53;&#x5F62;&#x5F0F;&#x662F;&#x6587;&#x6863;&#x548C;&#x539F;&#x578B;&#x3002;</li>
+</ul>
+<h2 id="&#x4EA7;&#x54C1;&#x8868;&#x8FBE;&#x7684;&#x6587;&#x6863;"><a name="&#x4EA7;&#x54C1;&#x8868;&#x8FBE;&#x7684;&#x6587;&#x6863;" class="anchor-navigation-ex-anchor" href="#&#x4EA7;&#x54C1;&#x8868;&#x8FBE;&#x7684;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4EA7;&#x54C1;&#x8868;&#x8FBE;&#x7684;&#x6587;&#x6863;</h2>
+<h3 id="&#x4EA7;&#x54C1;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x6587;&#x6863;"><a name="&#x4EA7;&#x54C1;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x6587;&#x6863;" class="anchor-navigation-ex-anchor" href="#&#x4EA7;&#x54C1;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x4EA7;&#x54C1;&#x7BA1;&#x7406;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x6587;&#x6863;</h3>
+<ul>
+<li>&#x4E1A;&#x754C;&#x6709;&#x4E09;&#x5927;&#x6587;&#x6863;&#x3001;&#x56DB;&#x5927;&#x6587;&#x6863;&#x4E4B;&#x8BF4;&#x3002;&#x5148;&#x4ECB;&#x7ECD;&#x4E09;&#x5927;&#x6587;&#x6863;&#x3002;</li>
+</ul>
+<p><img src="image-20200318163206853.png" alt="image-20200318163206853"></p>
+<p>&#xFF08;1&#xFF09;BRD&#xFF1A;Business Requirements Document&#xFF0C;&#x5546;&#x4E1A;&#x9700;&#x6C42;&#x6587;&#x6863;&#x3002;&#x8FD9;&#x662F;&#x4E09;&#x5927;&#x6587;&#x6863;&#x4E2D;&#x6700;&#x65E9;&#x51FA;&#x73B0;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x5BF9;&#x5E02;&#x573A;&#x8FDB;&#x884C;&#x5206;&#x6790;&#xFF0C;&#x53D1;&#x73B0;&#x5176;&#x4E2D;&#x7684;&#x673A;&#x4F1A;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x4EA7;&#x54C1;&#x5927;&#x65B9;&#x5411;&#x4F46;&#x6CA1;&#x6709;&#x4EA7;&#x54C1;&#x7EC6;&#x8282;</p>
+<p>&#x662F;&#x5C42;&#x6B21;&#x8F83;&#x9AD8;&#x7684;&#x4EA7;&#x54C1;&#x7ECF;&#x7406;&#x548C;&#x516C;&#x53F8;&#x9AD8;&#x7BA1;&#x8BA8;&#x8BBA;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;MRD&#xFF1A;Market Requirements Document&#xFF0C;&#x5E02;&#x573A;&#x9700;&#x6C42;&#x6587;&#x6863;&#x3002;&#x5982;&#x679C;BRD&#x5B9A;&#x7684;&#x5927;&#x65B9;&#x5411;&#x83B7;&#x5F97;&#x516C;&#x53F8;&#x9AD8;&#x7BA1;&#x8BA4;&#x53EF;&#xFF0C;&#x5C31;&#x8981;&#x8FDB;&#x4E00;&#x6B65;&#x7EC6;&#x5316;&#x5199;MRD&#x4E86;</p>
+<p>&#x4EA7;&#x54C1;&#x6709;&#x4E86;&#x5173;&#x952E;&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#x3001;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x5212;&#x5206;&#x7B49;&#x5185;&#x5BB9;&#xFF0C;&#x5176;&#x4E2D;&#x901A;&#x5E38;&#x5305;&#x542B;&#x4E86;&#x601D;&#x7EF4;&#x5BFC;&#x56FE;&#x3001;&#x529F;&#x80FD;&#x5217;&#x8868;&#x7B49;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;PRD&#xFF1A;Product Requirements Document&#xFF0C;&#x4EA7;&#x54C1;&#x9700;&#x6C42;&#x6587;&#x6863;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x4EA7;&#x54C1;&#x9700;&#x6C42;&#x662F;&#x4EA7;&#x54C1;&#x56E2;&#x961F;&#x5BF9;&#x8BBE;&#x8BA1;&#x3001;&#x6280;&#x672F;&#x56E2;&#x961F;&#x63D0;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4EA7;&#x54C1;&#x89C4;&#x5212;&#xFF08;&#x66F4;&#x5177;&#x4F53;&#x5730;&#x8BF4;&#x662F;&#x7248;&#x672C;&#x89C4;&#x5212;&#xFF09;</p>
+<h3 id="prd&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;"><a name="prd&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#prd&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. PRD&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;</h3>
+<ul>
+<li>PRD&#x7684;&#x4EF7;&#x503C;&#x5C31;&#x662F;&#x5B9A;&#x4E49;&#x4EA7;&#x54C1;&#x9700;&#x6C42;&#xFF0C;&#x5728;&#x56E2;&#x961F;&#x5185;&#x8FBE;&#x6210;&#x5173;&#x4E8E;&#x5B9E;&#x73B0;&#x76EE;&#x6807;&#x7684;&#x5171;&#x8BC6;&#x3002;PRD&#x7684;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x6709;&#xFF1A;&#x9879;&#x76EE;&#x7ECF;&#x7406;&#x3001;&#x8BBE;&#x8BA1;&#x5E08;&#x3001;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x3001;&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;&#x3001;&#x8FD0;&#x8425;&#x4EBA;&#x5458;&#x3002;</li>
+</ul>
+<h4 id="prd&#x6587;&#x6863;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;"><a name="prd&#x6587;&#x6863;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;" class="anchor-navigation-ex-anchor" href="#prd&#x6587;&#x6863;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>PRD&#x6587;&#x6863;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;</h4>
+<ul>
+<li>&#x5171;&#x6027;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#xFF0C;&#x638C;&#x63E1;&#x8FD9;&#x4E9B;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#x662F;&#x5199;&#x51FA;&#x5408;&#x683C;PRD&#x7684;&#x5173;&#x952E;</li>
+</ul>
+<p>&#xB7;&#x6574;&#x4F53;&#x4EA7;&#x54C1;&#x7ED3;&#x6784;&#xFF0C;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3001;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x5212;&#x5206;&#x53CA;&#x5176;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF1B;
+&#xB7;&#x529F;&#x80FD;&#x7684;&#x6E05;&#x6670;&#x8868;&#x8FF0;&#xFF0C;&#x5305;&#x62EC;&#x529F;&#x80FD;&#x6D41;&#x7A0B;&#x56FE;&#x3001;&#x754C;&#x9762;&#x6D41;&#x7A0B;&#x56FE;&#x3001;&#x7528;&#x4F8B;&#xFF1B;
+&#xB7;&#x6587;&#x6848;&#x3001;&#x56FE;&#x7247;&#x3001;&#x8868;&#x683C;&#x7B49;&#x9759;&#x6001;&#x5185;&#x5BB9;&#x53CA;&#x5176;&#x5927;&#x4F53;&#x7248;&#x5F0F;&#xFF1B;
+&#xB7;&#x52A8;&#x6001;&#x5185;&#x5BB9;&#x7684;&#x6837;&#x4F8B;&#x3001;&#x6570;&#x636E;&#x6765;&#x6E90;&#xFF1B;
+&#xB7;&#x4EA4;&#x4E92;&#x8BF4;&#x660E;&#xFF1B;
+&#xB7;&#x975E;&#x529F;&#x80FD;&#x9700;&#x6C42;&#x3002;</p>
+<ul>
+<li>PRD&#x6587;&#x6863;&#x7684;&#x5176;&#x4ED6;&#x5185;&#x5BB9;</li>
+</ul>
+<p>&#xB7;&#x6587;&#x4EF6;&#x547D;&#x540D;&#xFF0C;&#x8981;&#x6C42;&#x6E05;&#x6670;&#x3001;&#x7B80;&#x6D01;&#xFF0C;&#x4FDD;&#x8BC1;&#x5728;&#x5168;&#x516C;&#x53F8;&#x90FD;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x91CD;&#x540D;&#x73B0;&#x8C61;&#x3002;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x300A;&#x516C;&#x53F8;&#x540D;+&#x4EA7;&#x54C1;&#x540D;+&#x7248;&#x672C;&#x53F7;+&#x201C;&#x4EA7;&#x54C1;&#x9700;&#x6C42;&#x6587;&#x6863;&#x201D;&#x300B;</p>
+<p>&#xB7;&#x6587;&#x6863;&#x4FEE;&#x8BA2;&#x8BB0;&#x5F55;&#xFF0C;&#x5305;&#x62EC;&#x4FEE;&#x8BA2;&#x5E8F;&#x53F7;&#x3001;&#x4FEE;&#x8BA2;&#x65E5;&#x671F;&#x3001;&#x7248;&#x672C;&#x53F7;&#x3001;&#x4FEE;&#x8BA2;&#x8BF4;&#x660E;&#x3001;&#x4FEE;&#x8BA2;&#x4EBA;</p>
+<ul>
+<li><strong>&#x5199;PRD&#x6587;&#x6863;&#x7684;&#x96BE;&#x70B9;&#x4E0D;&#x662F;&#x683C;&#x5F0F;&#x548C;&#x6587;&#x7B14;&#xFF0C;&#x800C;&#x662F;&#x81EA;&#x5DF1;&#x6709;&#x6CA1;&#x6709;&#x60F3;&#x6E05;&#x695A;&#x3001;&#x60F3;&#x5168;&#x9762;&#x3001;&#x60F3;&#x7EC6;&#x81F4;&#x3002;</strong></li>
+</ul>
+<h2 id="&#x539F;&#x578B;"><a name="&#x539F;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x539F;&#x578B;</h2>
+<ul>
+<li>&#x6211;&#x63A8;&#x8350;&#x65B0;&#x4EBA;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x89C4;&#x5212;&#x4E00;&#x79CD;&#x9AD8;&#x4FDD;&#x771F;&#x539F;&#x578B;&#x2014;&#x2014;&#x771F;&#x673A;&#x4EA4;&#x4E92;&#x539F;&#x578B;&#x3002;&#x76F8;&#x6BD4;&#x5176;&#x4ED6;&#x539F;&#x578B;&#xFF0C;&#x5B83;&#x6709;&#x4E24;&#x4E2A;&#x5F88;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x7279;&#x70B9;&#xFF1A;</li>
+</ul>
+<p>&#xB7;&#x53EF;&#x771F;&#x673A;&#x4F53;&#x9A8C;&#x3002;&#x4E3A;PC Web&#x7B49;&#x4E3A;PC&#x89C4;&#x5212;&#x7684;&#x7528;&#x6237;&#x7AEF;&#xFF0C;&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x3001;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x76F4;&#x63A5;&#x5C31;&#x80FD;&#x5728;PC&#x4E0A;&#x4F53;&#x9A8C;&#xFF1B;App&#x3001;&#x79FB;&#x52A8;Web&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x7B49;&#x4E3A;&#x79FB;&#x52A8;&#x7AEF;&#x89C4;&#x5212;&#x7684;&#x7528;&#x6237;&#x7AEF;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x4F53;&#x9A8C;&#x3002;</p>
+<p>&#xB7;&#x53EF;&#x4EE5;&#x4EA4;&#x4E92;&#x4F53;&#x9A8C;&#x3002;&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x3001;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x5728;&#x771F;&#x673A;&#x4E0A;&#x5BF9;&#x539F;&#x578B;&#x8FDB;&#x884C;&#x6A21;&#x62DF;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x539F;&#x578B;&#x4F1A;&#x505A;&#x51FA;&#x76F8;&#x5E94;&#x53CD;&#x5E94;&#x3002;</p>
+<h2 id="&#x7248;&#x672C;&#x4ECE;&#x89C4;&#x5212;&#x5230;&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;"><a name="&#x7248;&#x672C;&#x4ECE;&#x89C4;&#x5212;&#x5230;&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x7248;&#x672C;&#x4ECE;&#x89C4;&#x5212;&#x5230;&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x7248;&#x672C;&#x4ECE;&#x89C4;&#x5212;&#x5230;&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;</h2>
+<ul>
+<li>&#x771F;&#x5B9E;&#x7684;&#x4EA7;&#x54C1;&#x5B9E;&#x6218;&#x6C38;&#x8FDC;&#x5145;&#x6EE1;&#x95EE;&#x9898;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x53BB;&#x89E3;&#x51B3;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第4节　功能模块规划的流程.html" class="navigation navigation-prev " aria-label="Previous page: 第4节　功能模块规划的流程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../第8章　版本规划（中）——App端规划/" class="navigation navigation-next " aria-label="Next page: 第8章　版本规划（中）——App端规划">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第5节　版本规划的表达以及实现过程","level":"2.1.4.5","depth":3,"next":{"title":"第8章　版本规划（中）——App端规划","level":"2.1.5","depth":2,"path":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/README.md","ref":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/README.md","articles":[{"title":"第1节　App端规划的基础知识","level":"2.1.5.1","depth":3,"path":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第1节　App端规划的基础知识.md","ref":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第1节　App端规划的基础知识.md","articles":[]},{"title":"第2节　App端规划的实战要点","level":"2.1.5.2","depth":3,"path":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第2节　App端规划的实战要点.md","ref":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第2节　App端规划的实战要点.md","articles":[]},{"title":"第3节　理解iOS和Android规范","level":"2.1.5.3","depth":3,"path":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第3节　理解iOS和Android规范.md","ref":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第3节　理解iOS和Android规范.md","articles":[]},{"title":"第4节　为Android、iOS双平台做规划","level":"2.1.5.4","depth":3,"path":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第4节　为Android、iOS双平台做规划.md","ref":"能力体系篇　产品新人的能力杠铃/第8章　版本规划（中）——App端规划/第4节　为Android、iOS双平台做规划.md","articles":[]}]},"previous":{"title":"第4节　功能模块规划的流程","level":"2.1.4.4","depth":3,"path":"能力体系篇　产品新人的能力杠铃/第7章　版本规划（上）——概述和功能模块规划/第4节　功能模块规划的流程.md","ref":"能力体系篇　产品新人的能力杠铃/第7章　版本规划（上）——概述和功能模块规划/第4节　功能模块规划的流程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","splitter","anchor-navigation-ex","-sharing","-lunr","-search","search-pro","livereload"],"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"能力体系篇　产品新人的能力杠铃/第7章　版本规划（上）——概述和功能模块规划/第5节　版本规划的表达以及实现过程.md","mtime":"2020-03-18T08:54:22.749Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-28T11:31:40.316Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
